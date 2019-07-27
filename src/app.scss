@@ -1,0 +1,11 @@
+@import "~taro-ui/dist/style/index.scss";
+
+.flex-wrp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+}
