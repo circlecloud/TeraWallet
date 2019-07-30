@@ -9,8 +9,8 @@ import { mapDefaultProps } from '../../models/utils';
 import './index.scss';
 import { IndexProps, IndexState } from './type';
 
-@connect(mapDefaultProps)
-export default class Index extends Component<IndexProps, IndexState> {
+@connect(mapDefaultProps(Index))
+class Index extends Component<IndexProps, IndexState> {
   config: Config = {
     navigationBarTitleText: '首页',
     enablePullDownRefresh: true
@@ -55,3 +55,5 @@ export default class Index extends Component<IndexProps, IndexState> {
     )
   }
 }
+
+export default Index

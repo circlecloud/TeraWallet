@@ -10,8 +10,8 @@ import defaultImage from '../../assets/images/logo.png';
 import './index.scss';
 import { MyIndexProps, MyState } from './type';
 
-@connect(mapDefaultProps)
-class Index extends Component<MyIndexProps, MyState> {
+@connect(mapDefaultProps(My))
+class My extends Component<MyIndexProps, MyState> {
   config: Config = {
     navigationBarTitleText: '个人中心',
     enablePullDownRefresh: true
@@ -103,4 +103,4 @@ class Index extends Component<MyIndexProps, MyState> {
   }
 }
 
-export default Index
+export default My
