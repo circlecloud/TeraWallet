@@ -1,6 +1,7 @@
-import { getCurrentInfo, getBlockInfo, getAccount, getHistoryTransactions } from '../../rpc/tera'
-import coinKit from '../../utils/coin-kit'
 import Taro from '@tarojs/taro';
+
+import coinKit from '../../utils/coin-kit'
+import { getCurrentInfo, getBlockInfo, getAccount, getHistoryTransactions } from '../../rpc/tera'
 
 const MAX_CENT = 1e9
 

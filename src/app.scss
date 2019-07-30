@@ -9,3 +9,13 @@
   flex-grow: 1;
   text-align: center;
 }
+
+.page {
+  position: relative;
+  background-color: #FDFDFD;
+
+  view,
+  div {
+    box-sizing: border-box;
+  }
+}

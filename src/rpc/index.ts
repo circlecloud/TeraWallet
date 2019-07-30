@@ -1,4 +1,4 @@
-import Taro from "@tarojs/taro";
+import Taro from '@tarojs/taro';
 
 let host = 'https://teraapi.sixi.com'
 
@@ -15,7 +15,7 @@ function printRequest(method: string, path: string, data: any, response: any, co
 
 function showError(content) {
   Taro.showModal({
-    title: "网络请求错误",
+    title: '网络请求错误',
     content,
     showCancel: false
   })

@@ -1,4 +1,4 @@
-import rpc from './index'
+import rpc from './index';
 import { BlockInfo, CurrentInfo, Account } from './types';
 
 async function getCurrentInfo(): Promise<CurrentInfo> {
@@ -29,9 +29,18 @@ async function getHistoryTransactions(id: number, count: number = 3, getDes: num
   return result.History;
 }
 
+async function getAccountListByKey(key: string): Promise<Account[]> {
+  let result = await rpc.get('/api/v1/GetAccountListByKey', {
+    Key: key,
+    AllData: 1
+  })
+  return result.arr;
+}
+
 export {
   getAccount,
   getCurrentInfo,
   getBlockInfo,
-  getHistoryTransactions
+  getHistoryTransactions,
+  getAccountListByKey
 }

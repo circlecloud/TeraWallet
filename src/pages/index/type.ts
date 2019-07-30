@@ -1,8 +1,8 @@
-export interface IndexProps {
-  dispatch?: any,
-  data: IndexData
-}
-export interface IndexData {
+import { DefaultProps } from "../../models/types";
+
+export type IndexProps = IndexModel & DefaultProps
+
+export interface IndexModel {
   version: number;
   block: number;
   supply: number;
@@ -10,4 +10,7 @@ export interface IndexData {
   lastMiner: number;
   lastName: string;
   lastNumber: number;
+}
+export interface IndexState {
+  notify: string
 }
