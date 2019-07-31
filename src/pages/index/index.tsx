@@ -1,15 +1,21 @@
 import { connect } from '@tarojs/redux';
-import { AtCard, AtNoticebar } from 'taro-ui';
+import { AtNoticebar } from 'taro-ui';
 import { View, Image } from '@tarojs/components';
 import Taro, { Component, Config } from '@tarojs/taro';
 
 import logoImg from '../../assets/images/logo.png';
-import { mapDefaultProps } from '../../models/utils';
+import { mapModelProps, mapModelActions } from '../../models/utils';
 
 import './index.scss';
+import { Actions } from './model';
+import BaseInfo from './components/base-info'
 import { IndexProps, IndexState } from './type';
 
-@connect(mapDefaultProps(Index))
+// import WsClient from '../../rpc/socket'
+
+const PAGE_NAME = 'index'
+
+@connect(mapModelProps(PAGE_NAME), mapModelActions(PAGE_NAME, Actions))
 class Index extends Component<IndexProps, IndexState> {
   config: Config = {
     navigationBarTitleText: '首页',
@@ -19,38 +25,33 @@ class Index extends Component<IndexProps, IndexState> {
     notify: '通知: 钱包目前处于测试阶段 如果发现BUG 请及时反馈!'
   }
 
+  switchWs() {
+    // if (WsClient.connected) {
+    //   WsClient.disconnect();
+    // } else {
+    //   WsClient.connect();
+    // }
+  }
+
   componentDidMount() {
     Taro.startPullDownRefresh();
   }
 
-  async onPullDownRefresh() {
-    await this.props.dispatch({
-      type: 'index/getCurrentInfo'
-    })
+  onPullDownRefresh() {
+    this.props[Actions.getCurrentInfo]();
   }
 
   render() {
-    const data = this.props
-    const info = (
-      <AtCard className='base-info' title='基本信息'>
-        <View>软件版本: {data.version}</View>
-        <View>当前高度: {data.block}</View>
-        <View>流通数量: {data.supply}</View>
-        <View>百 分 比: {data.percent}</View>
-        <View>当前收益: {data.lastNumber}</View>
-        <View>来    自: {data.lastMiner} {data.lastName}</View>
-      </AtCard>
-    )
     return (
       <View className='page page-index'>
         <AtNoticebar close marquee icon='volume-plus'>
           {this.state.notify}
         </AtNoticebar>
-        <View className='logo'>
+        <View className='logo' onClick={() => this.switchWs()}>
           <Image src={logoImg} className='img' mode='scaleToFill' />
         </View>
         <View className='page-title'>泰瑞管家</View>
-        {info}
+        <BaseInfo info={this.props} />
       </View>
     )
   }

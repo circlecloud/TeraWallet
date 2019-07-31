@@ -1,16 +1,18 @@
 import { connect } from '@tarojs/redux';
-import { AtList, AtListItem } from 'taro-ui';
 import Taro, { Component, Config } from '@tarojs/taro';
-import { View, Text, Image } from '@tarojs/components';
+import { View } from '@tarojs/components';
 
-import coinKit from '../../utils/coin-kit';
-import { mapDefaultProps } from '../../models/utils';
 import defaultImage from '../../assets/images/logo.png';
+import { mapModelProps, mapModelActions } from '../../models/utils';
 
 import './index.scss';
+import { Actions } from './model';
 import { MyIndexProps, MyState } from './type';
+import { UserInfo, AccountHeader, AccountList } from './components'
 
-@connect(mapDefaultProps(My))
+const PAGE_NAME = 'my'
+
+@connect(mapModelProps(PAGE_NAME), mapModelActions(PAGE_NAME, Actions))
 class My extends Component<MyIndexProps, MyState> {
   config: Config = {
     navigationBarTitleText: '个人中心',
@@ -19,16 +21,14 @@ class My extends Component<MyIndexProps, MyState> {
   state = {
     nickName: 'MiaoWoo',
     avatarUrl: defaultImage,
+    publicKey: '191864'
+  }
+  defaultProps = {
+    accounts: []
   }
 
   onPullDownRefresh() {
-    const { dispatch } = this.props;
-    if (dispatch) {
-      dispatch({
-        type: 'my/getAccounts',
-        playload: '02078AC7F16BAF88F9A6F8FA05D5C9F697596402D9EB774A36C74E52A3470EA85B'
-      })
-    }
+    this.props[Actions.getAccounts](this.state.publicKey)
   }
 
   componentDidMount() {
@@ -40,63 +40,13 @@ class My extends Component<MyIndexProps, MyState> {
       nickName,
       avatarUrl
     } = this.state;
-    const accounts = this.props.accounts.map(a => {
-      return <AtListItem
-        key={a.Num}
-        hasBorder={false}
-        title={`${a.Num}(${a.Name})`}
-        note={`${coinKit.toNumber(a.Value)}`}
-        iconInfo={{
-          size: 20,
-          color: 'green',
-          value: 'credit-card',
-        }}
-        extraThumb={defaultImage}
-      />
-    })
     return (
       <View className='page'>
-        <View className='user flex-wrp'>
-          <View className='avatar flex-item'>
-            <Image className='userinfo-avatar' src={avatarUrl}></Image>
-          </View>
-          <View className='user-info flex-item'>
-            <Text className='userinfo-nickname'>{nickName}</Text>
-            <Text className='edit'>查看或编辑个人主页</Text>
-          </View>
-        </View>
+        <UserInfo nickName={nickName} avatarUrl={avatarUrl} />
         <View className='my'>
-          <AtList hasBorder={false}>
-            <AtListItem
-              hasBorder={false}
-              title='创建/绑定私钥'
-              iconInfo={{
-                size: 20,
-                color: 'red',
-                value: 'lock',
-              }} />
-            <AtListItem
-              hasBorder={false}
-              title='创建账户'
-              iconInfo={{
-                size: 20,
-                color: 'green',
-                value: 'credit-card',
-              }} />
-          </AtList>
-          <View className='account'>
-            <AtList >
-              <AtListItem
-                hasBorder={false}
-                title='账户列表'
-                iconInfo={{
-                  size: 20,
-                  color: 'blue',
-                  value: 'numbered-list',
-                }} />
-              {accounts}
-            </AtList>
-          </View>
+          <AccountHeader />
+          <View className='account' />
+          <AccountList accounts={this.props.accounts} defaultImage={defaultImage} />
         </View>
       </View>
     )

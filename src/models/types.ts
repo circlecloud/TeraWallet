@@ -11,6 +11,7 @@ export type Dispatch = <P = any, C = (payload: P) => void>(action: {
 
 export interface DefaultProps {
   dispatch: Dispatch
+  [key: string]: Function
 }
 
 export interface DefaultModel<T> {

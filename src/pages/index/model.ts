@@ -3,6 +3,10 @@ import { DefaultModel } from '../../models/types';
 import { getInfo } from './service';
 import { IndexModel } from './type';
 
+let Actions = {
+  getCurrentInfo: 'getCurrentInfo'
+}
+
 export default {
   namespace: 'index',
   state: {
@@ -28,3 +32,5 @@ export default {
     }
   }
 } as DefaultModel<IndexModel>
+
+export { Actions }

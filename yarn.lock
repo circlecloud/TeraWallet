@@ -76,7 +76,7 @@
     core-js "^2.5.3"
     regenerator-runtime "^0.11.1"
 
-"@babel/runtime@^7.0.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.4.2":
   version "7.5.5"
   resolved "https://repo.yumc.pw/repository/npm/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha1-dPulbTXvvspEQJHHhQzNSU/S8TI=
@@ -136,21 +136,21 @@
   resolved "https://repo.yumc.pw/repository/npm/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha1-mgb08TfuhNffBGDB/bETX/psUP0=
 
-"@tarojs/async-await@^1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/async-await/-/async-await-1.3.10.tgz#f3260a64d29e57cc5cb951bcedede4b83f555db0"
-  integrity sha1-8yYKZNKeV8xcuVG87e3kuD9VXbA=
+"@tarojs/async-await@^1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/async-await/-/async-await-1.3.11.tgz#aad2d0a7aac2e863f3f107cac7b6b753b4bb49e6"
+  integrity sha1-qtLQp6rC6GPz8QfKx7a3U7S7SeY=
   dependencies:
     promise-polyfill "^7.1.2"
     regenerator-runtime "^0.11.1"
 
-"@tarojs/cli@^1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/cli/-/cli-1.3.10.tgz#bae2d1ca2479530bb7088ac246858a654f711d92"
-  integrity sha1-uuLRyiR5Uwu3CIrCRoWKZU9xHZI=
+"@tarojs/cli@^1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/cli/-/cli-1.3.11.tgz#32895f25fadb997cef7ed53e2680cb31c3165514"
+  integrity sha1-MolfJfrbmXzvftU+JoDLMcMWVRQ=
   dependencies:
-    "@tarojs/taroize" "1.3.10"
-    "@tarojs/transformer-wx" "1.3.10"
+    "@tarojs/taroize" "1.3.11"
+    "@tarojs/transformer-wx" "1.3.11"
     "@types/request" "^2.48.1"
     adm-zip "^0.4.13"
     autoprefixer "^8.4.1"
@@ -158,10 +158,11 @@
     babel-eslint "^8.2.3"
     babel-generator "^6.26.1"
     babel-plugin-danger-remove-unused-import "^1.1.1"
+    babel-plugin-preval "1.6.4"
     babel-plugin-remove-dead-code "^1.3.2"
     babel-plugin-transform-decorators-legacy "^1.3.4"
     babel-plugin-transform-define "^1.3.0"
-    babel-plugin-transform-jsx-to-stylesheet "1.3.10"
+    babel-plugin-transform-jsx-to-stylesheet "1.3.11"
     babel-plugin-transform-react-jsx "^6.24.1"
     babel-template "^6.26.0"
     babel-traverse "^6.26.0"
@@ -178,10 +179,10 @@
     ejs "^2.6.1"
     envinfo "^6.0.1"
     eslint "^4.15.0"
-    eslint-config-taro "1.3.10"
+    eslint-config-taro "1.3.11"
     eslint-plugin-import "^2.8.0"
     eslint-plugin-react "^7.4.0"
-    eslint-plugin-taro "1.3.10"
+    eslint-plugin-taro "1.3.11"
     eslint-plugin-typescript "^0.12.0"
     fbjs "^1.0.0"
     fs-extra "^5.0.0"
@@ -203,7 +204,7 @@
     postcss-modules-resolve-imports "^1.3.0"
     postcss-modules-scope "^1.1.0"
     postcss-modules-values "^1.3.0"
-    postcss-pxtransform "1.3.10"
+    postcss-pxtransform "1.3.11"
     postcss-reporter "^6.0.1"
     postcss-taro-unit-transform "1.2.15"
     postcss-url "^7.3.2"
@@ -214,19 +215,20 @@
     semver "^5.5.0"
     shelljs "^0.8.1"
     stylelint "9.3.0"
-    stylelint-config-taro-rn "1.3.10"
-    stylelint-taro-rn "1.3.10"
-    taro-css-to-react-native "1.3.10"
+    stylelint-config-taro-rn "1.3.11"
+    stylelint-taro-rn "1.3.11"
+    taro-css-to-react-native "1.3.11"
     through2 "^2.0.3"
     vinyl "^2.1.0"
     vinyl-fs "^3.0.2"
+    xml2js "^0.4.19"
     xxhashjs "^0.2.2"
     yauzl "2.10.0"
 
-"@tarojs/components@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/components/-/components-1.3.10.tgz#283392c56b83ae0def98022caaeb9adffbae7d00"
-  integrity sha1-KDOSxWuDrg3vmAIsquua3/uufQA=
+"@tarojs/components@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/components/-/components-1.3.11.tgz#abc076cf00993c17969c7ab3b6273753f8c74660"
+  integrity sha1-q8B2zwCZPBeWnHqztic3U/jHRmA=
   dependencies:
     better-scroll "^1.14.1"
     classnames "^2.2.5"
@@ -235,79 +237,79 @@
     swiper "^4.4.2"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-babel/-/plugin-babel-1.3.10.tgz#5017cefa15e69cce48d1ce9cedbe9e9df5cdf742"
-  integrity sha1-UBfO+hXmnM5I0c6c7b6enfXN90I=
+"@tarojs/plugin-babel@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-babel/-/plugin-babel-1.3.11.tgz#5b4b6f8ad8f5e3f420108e004019c64b3a6ce721"
+  integrity sha1-W0tvitj14/QgEI4AQBnGSzps5yE=
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-csso@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-csso/-/plugin-csso-1.3.10.tgz#3f4661c67c7fbeb735bf33e331aecfd873b6caa1"
-  integrity sha1-P0Zhxnx/vrc1vzPjMa7P2HO2yqE=
+"@tarojs/plugin-csso@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-csso/-/plugin-csso-1.3.11.tgz#36a3d7ba5553faa0efb67e8bbe1aca455dff5202"
+  integrity sha1-NqPXulVT+qDvtn6LvhrKRV3/UgI=
   dependencies:
     csso "^3.5.0"
 
-"@tarojs/plugin-sass@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-sass/-/plugin-sass-1.3.10.tgz#6882dceb8b4591c8177e9d39b4045cab4a44aca1"
-  integrity sha1-aILc64tFkcgXfp05tARcq0pErKE=
+"@tarojs/plugin-sass@^1.3.11":
+  version "1.3.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-sass/-/plugin-sass-1.3.11.tgz#492e6582f182ffb523b0ea51b4648dfeb79089a4"
+  integrity sha512-7T6X5HGiYfu1BNWP9fkaxrI0b/67OJMw2F/ya3tHCOvfcGxas9Qrh0rq2ltX+5rKO6s0H7W5aRegr+a/3Lgjcg==
   dependencies:
     node-sass "^4.12.0"
     scss-bundle "^2.5.1"
 
-"@tarojs/plugin-uglifyjs@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/plugin-uglifyjs/-/plugin-uglifyjs-1.3.10.tgz#5e794210e4ffd31233f7ee6d351d341ccf0f3463"
-  integrity sha1-XnlCEOT/0xIz9+5tNR00HM8PNGM=
+"@tarojs/plugin-uglifyjs@^1.3.11":
+  version "1.3.11"
+  resolved "https://registry.yarnpkg.com/@tarojs/plugin-uglifyjs/-/plugin-uglifyjs-1.3.11.tgz#cb937615195a290234aa637c783f9bb4c28ad7e5"
+  integrity sha512-rZJM6Xxh8/tVpOYuJHeqvlhPPdQuas+16CvXXAiBFNe91U3AoSKqUuIfVJKJdhk+jMWevgnLrlUbL+0dhPoX3Q==
   dependencies:
     uglify-js "^3.3.24"
 
-"@tarojs/redux-h5@^1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/redux-h5/-/redux-h5-1.3.10.tgz#08e0ecb8219cc953821239ea2e3079f121bd3c4e"
-  integrity sha1-CODsuCGcyVOCEjnqLjB58SG9PE4=
+"@tarojs/redux-h5@^1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/redux-h5/-/redux-h5-1.3.11.tgz#0c7eed92c8b8d5d22849c04037b5dac3ed50aaf5"
+  integrity sha1-DH7tksi41dIoScBAN7Xaw+1QqvU=
   dependencies:
     hoist-non-react-statics "^2.5.0"
     invariant "^2.2.4"
     loose-envify "^1.1.0"
     prop-types "^15.6.1"
 
-"@tarojs/redux@^1.3.10":
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/@tarojs/redux/-/redux-1.3.10.tgz#0114fc82af8160abecc03531ae8b1b0d11873c96"
-  integrity sha512-cDpCjveX1dahJ4KWo8knl6jtBs+TgRXHc8i+FNSYYf2IcB8NkXGyIwA4NKCMoejjbUb/ri1cuYbL4NhMe0HDRA==
+"@tarojs/redux@^1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/redux/-/redux-1.3.11.tgz#385b15e1104205531da9135a5b25ff9da726e495"
+  integrity sha1-OFsV4RBCBVMdqRNaWyX/nacm5JU=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
 
-"@tarojs/router@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/router/-/router-1.3.10.tgz#34c86e5dd048b3fd06ea543c41cc0c8b02a3ece6"
-  integrity sha1-NMhuXdBIs/0G6lQ8QcwMiwKj7OY=
+"@tarojs/router@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/router/-/router-1.3.11.tgz#0e51751bc55b98d6dc803508caa0985e67d75c2b"
+  integrity sha1-DlF1G8VbmNbcgDUIyqCYXmfXXCs=
   dependencies:
     invariant "2.2.4"
-    lodash "4.17.11"
+    lodash "4.17.13"
     resolve-pathname "2.2.0"
     rollup-plugin-alias "1.4.0"
     value-equal "0.4.0"
     warning "4.0.2"
 
-"@tarojs/taro-alipay@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-alipay/-/taro-alipay-1.3.10.tgz#3cb92275703db0e7d90db2a189f757b7ffbe63c6"
-  integrity sha1-PLkidXA9sOfZDbKhifdXt/++Y8Y=
+"@tarojs/taro-alipay@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-alipay/-/taro-alipay-1.3.11.tgz#3f36d9fba9cd77daf72d953cb6d187d37a528cc3"
+  integrity sha1-PzbZ+6nNd9r3LZU8ttGH03pSjMM=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro-h5@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-h5/-/taro-h5-1.3.10.tgz#91ef1242ea9a4278ec34eb41d3932fa04b6a97c7"
-  integrity sha1-ke8SQuqaQnjsNOtB05MvoEtql8c=
+"@tarojs/taro-h5@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-h5/-/taro-h5-1.3.11.tgz#bbf4b4239f0681b9a6b0cd1740598b9d62ea67b2"
+  integrity sha1-u/S0I58GgbmmsM0XQFmLnWLqZ7I=
   dependencies:
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
@@ -315,65 +317,65 @@
     raf "^3.4.1"
     whatwg-fetch "^2.0.4"
 
-"@tarojs/taro-qq@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-qq/-/taro-qq-1.3.10.tgz#32c4f23f91e0a2e71773ca4ebb1ae2d2bb2c4e4a"
-  integrity sha1-MsTyP5HgoucXc8pOuxri0rssTko=
+"@tarojs/taro-qq@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-qq/-/taro-qq-1.3.11.tgz#6708d218e25cf61f4ed1206ee2018c340a407b5a"
+  integrity sha1-ZwjSGOJc9h9O0SBu4gGMNApAe1o=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro-quickapp@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-quickapp/-/taro-quickapp-1.3.10.tgz#0c7417799f22ed819e5c1133953a6bd0450f8869"
-  integrity sha1-DHQXeZ8i7YGeXBEzlTpr0EUPiGk=
+"@tarojs/taro-quickapp@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-quickapp/-/taro-quickapp-1.3.11.tgz#ece02687073266926013285db8d2f7c21d31ce2b"
+  integrity sha1-7OAmhwcyZpJgEyhduNL3wh0xzis=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro-swan@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-swan/-/taro-swan-1.3.10.tgz#ca2b30c64f05c74f94ddb40a3c958d1846971c68"
-  integrity sha1-yiswxk8Fx0+U3bQKPJWNGEaXHGg=
+"@tarojs/taro-swan@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-swan/-/taro-swan-1.3.11.tgz#87eaa979d7b7ada17d5db2b1bd313c261e38d788"
+  integrity sha1-h+qpede3raF9XbKxvTE8Jh4414g=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro-tt@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-tt/-/taro-tt-1.3.10.tgz#fe25f527608d377f874d887dff8d2ced794335c2"
-  integrity sha1-/iX1J2CNN3+HTYh9/40s7XlDNcI=
+"@tarojs/taro-tt@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-tt/-/taro-tt-1.3.11.tgz#72ab55eca5fa4e240f77e70bd38950d98c905331"
+  integrity sha1-cqtV7KX6TiQPd+cL04lQ2YyQUzE=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro-weapp@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-weapp/-/taro-weapp-1.3.10.tgz#fc939d296e96bd169362d258c22c503945b1a35f"
-  integrity sha1-/JOdKW6WvRaTYtJYwixQOUWxo18=
+"@tarojs/taro-weapp@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro-weapp/-/taro-weapp-1.3.11.tgz#e84aaa27b166354a19f1f9904af9db160bb80407"
+  integrity sha1-6EqqJ7FmNUoZ8fmQSvnbFgu4BAc=
   dependencies:
-    "@tarojs/taro" "1.3.10"
-    "@tarojs/utils" "1.3.10"
+    "@tarojs/taro" "1.3.11"
+    "@tarojs/utils" "1.3.11"
     lodash "^4.17.10"
     prop-types "^15.6.1"
 
-"@tarojs/taro@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro/-/taro-1.3.10.tgz#687dead4a737bbcdc22c1e97deb10e294381f0dc"
-  integrity sha1-aH3q1Kc3u83CLB6X3rEOKUOB8Nw=
+"@tarojs/taro@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taro/-/taro-1.3.11.tgz#8c1ae024e4d22597d4b5af6f0c5da1647dc6e227"
+  integrity sha1-jBrgJOTSJZfUta9vDF2hZH3G4ic=
 
-"@tarojs/taroize@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taroize/-/taroize-1.3.10.tgz#3e3769a6c9859e4fd2957dbff01d22671fe5f981"
-  integrity sha1-PjdppsmFnk/SlX2/8B0iZx/l+YE=
+"@tarojs/taroize@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/taroize/-/taroize-1.3.11.tgz#d9cc136183059fee347f5eb74bd35abe553ba23b"
+  integrity sha1-2cwTYYMFn+40f163S9NavlU7ojs=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     babel-core "^6.26.3"
@@ -386,10 +388,10 @@
     lodash "^4.17.5"
     typescript "^3.0.1"
 
-"@tarojs/transformer-wx@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/transformer-wx/-/transformer-wx-1.3.10.tgz#3534df56e12450bfcd1758c14a56d347b0cf86f8"
-  integrity sha1-NTTfVuEkUL/NF1jBSlbTR7DPhvg=
+"@tarojs/transformer-wx@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/transformer-wx/-/transformer-wx-1.3.11.tgz#20a36d4ba33f0ed05dd484b740f8e453caa52193"
+  integrity sha1-IKNtS6M/DtBd1IS3QPjkU8qlIZM=
   dependencies:
     "@babel/code-frame" "^7.0.0-beta.44"
     babel-core "^6.26.3"
@@ -411,29 +413,29 @@
     babel-types "^6.26.0"
     eslint "^4.15.0"
     eslint-plugin-react "7.10.0"
-    eslint-plugin-taro "1.3.10"
+    eslint-plugin-taro "1.3.11"
     html "^1.0.0"
     lodash "^4.17.5"
     prettier "^1.14.2"
     typescript "^3.2.2"
 
-"@tarojs/utils@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/utils/-/utils-1.3.10.tgz#075d2a1da136af3aa6282fd9ddd3fcd550d63af6"
-  integrity sha1-B10qHaE2rzqmKC/Z3dP81VDWOvY=
+"@tarojs/utils@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/utils/-/utils-1.3.11.tgz#c35a14f994cfca50879e4d8679fbdc3268dc4eef"
+  integrity sha1-w1oU+ZTPylCHnk2GefvcMmjcTu8=
 
-"@tarojs/webpack-runner@1.3.10":
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/@tarojs/webpack-runner/-/webpack-runner-1.3.10.tgz#3cd215584eaac653ddfd587b41a06dfed47c4e9c"
-  integrity sha1-PNIVWE6qxlPd/Vh7QaBt/tR8Tpw=
+"@tarojs/webpack-runner@1.3.11":
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/@tarojs/webpack-runner/-/webpack-runner-1.3.11.tgz#bd06f42f541e22404d992d2e00855669f6cafc16"
+  integrity sha1-vQb0L1QeIkBNmS0uAIVWafbK/BY=
   dependencies:
-    "@tarojs/taro-h5" "1.3.10"
+    "@tarojs/taro-h5" "1.3.11"
     autoprefixer "8.6.4"
     babel-core "6.26.0"
     babel-loader "7.1.4"
     babel-plugin-syntax-dynamic-import "6.18.0"
     babel-plugin-transform-react-jsx "6.24.1"
-    babel-plugin-transform-taroapi "1.3.10"
+    babel-plugin-transform-taroapi "1.3.11"
     babel-types "6.26.0"
     chalk "2.4.2"
     copy-webpack-plugin "^5.0.3"
@@ -445,13 +447,13 @@
     html-webpack-plugin "3.2.0"
     less "3.0.4"
     less-loader "4.1.0"
-    lodash "4.17.11"
+    lodash "4.17.13"
     mini-css-extract-plugin "0.4.1"
     opn "5.3.0"
     ora "2.1.0"
     postcss-loader "2.1.6"
-    postcss-plugin-constparse "1.3.10"
-    postcss-pxtransform "1.3.10"
+    postcss-plugin-constparse "1.3.11"
+    postcss-pxtransform "1.3.11"
     resolve "1.8.1"
     resolve-url-loader "2.3.0"
     sass-loader "7.1.0"
@@ -532,6 +534,11 @@
     "@types/node" "*"
     "@types/tough-cookie" "*"
     form-data "^2.5.0"
+
+"@types/socket.io-client@^1.4.32":
+  version "1.4.32"
+  resolved "https://repo.yumc.pw/repository/npm/@types/socket.io-client/-/socket.io-client-1.4.32.tgz#988a65a0386c274b1c22a55377fab6a30789ac14"
+  integrity sha1-mIploDhsJ0scIqVTd/q2oweJrBQ=
 
 "@types/tough-cookie@*":
   version "2.3.5"
@@ -800,6 +807,11 @@ adm-zip@^0.4.13:
   resolved "https://repo.yumc.pw/repository/npm/adm-zip/-/adm-zip-0.4.13.tgz#597e2f8cc3672151e1307d3e95cddbc75672314a"
   integrity sha1-WX4vjMNnIVHhMH0+lc3bx1ZyMUo=
 
+after@0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
+  integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://repo.yumc.pw/repository/npm/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -1013,6 +1025,11 @@ array-unique@^0.3.2:
   resolved "https://repo.yumc.pw/repository/npm/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+arraybuffer.slice@~0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/arraybuffer.slice/-/arraybuffer.slice-0.0.7.tgz#3bbc4275dd584cc1b10809b89d4e8b63a69e7675"
+  integrity sha512-wGUIVQXuehL5TCqQun8OW81jGzAWycqzFF8lFp+GOM5BXLYj3bKNsYC4daB7n6XjCqxQA/qgTJ+8ANR3acjrog==
+
 arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://repo.yumc.pw/repository/npm/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
@@ -1071,6 +1088,11 @@ async-foreach@^0.1.3:
   version "0.1.3"
   resolved "https://repo.yumc.pw/repository/npm/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
   integrity sha1-NhIfhFwFeBct5Bmpfb6x0W7DRUI=
+
+async-limiter@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
+  integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
 async@^1.5.2:
   version "1.5.2"
@@ -1420,6 +1442,15 @@ babel-plugin-danger-remove-unused-import@^1.1.1:
   resolved "https://repo.yumc.pw/repository/npm/babel-plugin-danger-remove-unused-import/-/babel-plugin-danger-remove-unused-import-1.1.2.tgz#ac39c30edfe524ef8cfc411fec5edc479d19e132"
   integrity sha1-rDnDDt/lJO+M/EEf7F7cR50Z4TI=
 
+babel-plugin-macros@^2.0.0:
+  version "2.6.1"
+  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-macros/-/babel-plugin-macros-2.6.1.tgz#41f7ead616fc36f6a93180e89697f69f51671181"
+  integrity sha1-Qffq1hb8NvapMYDolpf2n1FnEYE=
+  dependencies:
+    "@babel/runtime" "^7.4.2"
+    cosmiconfig "^5.2.0"
+    resolve "^1.10.0"
+
 babel-plugin-minify-dead-code@^0.5.2:
   version "0.5.2"
   resolved "https://repo.yumc.pw/repository/npm/babel-plugin-minify-dead-code/-/babel-plugin-minify-dead-code-0.5.2.tgz#8babe8e5ef7c8a4a55bbe2e40f2f22db3ef4b1ad"
@@ -1429,6 +1460,16 @@ babel-plugin-minify-dead-code@^0.5.2:
     babel-helper-mark-eval-scopes "^0.3.0"
     babel-helper-remove-or-void "^0.3.0"
     lodash.some "^4.6.0"
+
+babel-plugin-preval@1.6.4:
+  version "1.6.4"
+  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-preval/-/babel-plugin-preval-1.6.4.tgz#96febe8172b3ca6c3d03ed96eeb0382ba4b18056"
+  integrity sha1-lv6+gXKzymw9A+2W7rA4K6SxgFY=
+  dependencies:
+    babel-plugin-macros "^2.0.0"
+    babel-register "^6.26.0"
+    babylon "^6.18.0"
+    require-from-string "^2.0.1"
 
 babel-plugin-remove-dead-code@^1.3.2:
   version "1.3.2"
@@ -1758,10 +1799,10 @@ babel-plugin-transform-jsx-stylesheet@^0.6.5:
   dependencies:
     camelcase "^3.0.0"
 
-babel-plugin-transform-jsx-to-stylesheet@1.3.10:
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-transform-jsx-to-stylesheet/-/babel-plugin-transform-jsx-to-stylesheet-1.3.10.tgz#e84bbed4fbd0163d2ecbb455f58a4c4e25f82d82"
-  integrity sha1-6Eu+1PvQFj0uy7RV9YpMTiX4LYI=
+babel-plugin-transform-jsx-to-stylesheet@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-transform-jsx-to-stylesheet/-/babel-plugin-transform-jsx-to-stylesheet-1.3.11.tgz#aaf45806f2edbd963d60a433e4ff6bfb3ff67a14"
+  integrity sha1-qvRYBvLtvZY9YKQz5P9r+z/2ehQ=
 
 babel-plugin-transform-object-rest-spread@^6.26.0:
   version "6.26.0"
@@ -1795,10 +1836,10 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-plugin-transform-taroapi@1.3.10:
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-1.3.10.tgz#b38f3f7b56e93195bda8ac134e1c0549ca47d0ea"
-  integrity sha1-s48/e1bpMZW9qKwTThwFScpH0Oo=
+babel-plugin-transform-taroapi@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-1.3.11.tgz#41c8d58a6166016d0c74c073e2e9eaf7d8fa9584"
+  integrity sha1-QcjVimFmAW0MdMBz4unq99j6lYQ=
 
 babel-preset-env@^1.6.1:
   version "1.7.0"
@@ -1903,6 +1944,11 @@ babylon@^6.1.21, babylon@^6.18.0, babylon@^6.7.0:
   resolved "https://repo.yumc.pw/repository/npm/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha1-ry87iPpvXB5MY00aD46sT1WzleM=
 
+backo2@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/backo2/-/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
+  integrity sha1-MasayLEpNjRj41s+u2n038+6eUc=
+
 bail@^1.0.0:
   version "1.0.4"
   resolved "https://repo.yumc.pw/repository/npm/bail/-/bail-1.0.4.tgz#7181b66d508aa3055d3f6c13f0a0c720641dde9b"
@@ -1912,6 +1958,11 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://repo.yumc.pw/repository/npm/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+
+base64-arraybuffer@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-0.1.5.tgz#73926771923b5a19747ad666aa5cd4bf9c6e9ce8"
+  integrity sha1-c5JncZI7Whl0etZmqlzUv5xunOg=
 
 base64-js@^1.0.2, base64-js@^1.3.0:
   version "1.3.0"
@@ -1942,6 +1993,13 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+better-assert@~1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/better-assert/-/better-assert-1.0.2.tgz#40866b9e1b9e0b55b481894311e68faffaebc522"
+  integrity sha1-QIZrnhueC1W0gYlDEeaPr/rrxSI=
+  dependencies:
+    callsite "1.0.0"
 
 better-babel-generator@^6.26.1:
   version "6.26.1"
@@ -1991,6 +2049,11 @@ bl@^1.0.0:
   dependencies:
     readable-stream "^2.3.5"
     safe-buffer "^5.1.1"
+
+blob@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
+  integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
 block-stream@*:
   version "0.0.9"
@@ -2220,6 +2283,13 @@ buffer@^5.2.1:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
 
+bufferutil@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/bufferutil/-/bufferutil-4.0.1.tgz#3a177e8e5819a1243fe16b63a199951a7ad8d4a7"
+  integrity sha512-xowrxvpxojqkagPcWRQVXZl0YXhRhAtBEIq3VoER1NH5Mw1n1o0ojdspp+GS2J//2gCVyrzQDApQ4unGF+QOoA==
+  dependencies:
+    node-gyp-build "~3.7.0"
+
 builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://repo.yumc.pw/repository/npm/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -2345,7 +2415,7 @@ callsite-record@^3.0.0:
     lodash "4.6.1 || ^4.16.1"
     pinkie-promise "^2.0.0"
 
-callsite@^1.0.0:
+callsite@1.0.0, callsite@^1.0.0:
   version "1.0.0"
   resolved "https://repo.yumc.pw/repository/npm/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
   integrity sha1-KAOY5dZkvXQDi28JBRU+borxvCA=
@@ -2765,10 +2835,25 @@ commondir@^1.0.1:
   resolved "https://repo.yumc.pw/repository/npm/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
+component-bind@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/component-bind/-/component-bind-1.0.0.tgz#00c608ab7dcd93897c0009651b1d3a8e1e73bbd1"
+  integrity sha1-AMYIq33Nk4l8AAllGx06jh5zu9E=
+
+component-emitter@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
+  integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
+
 component-emitter@^1.2.1:
   version "1.3.0"
   resolved "https://repo.yumc.pw/repository/npm/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
   integrity sha1-FuQHD7qK4ptnnyIVhT7hgasuq8A=
+
+component-inherit@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5cae65135619db26ff143"
+  integrity sha1-ZF/ErfWLcrZJ1crmUTVhnbJv8UM=
 
 compressible@~2.0.16:
   version "2.0.17"
@@ -2931,7 +3016,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://repo.yumc.pw/repository/npm/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cosmiconfig@^5.0.0:
+cosmiconfig@^5.0.0, cosmiconfig@^5.2.0:
   version "5.2.1"
   resolved "https://repo.yumc.pw/repository/npm/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha1-BA9yaAnFked6F8CjYmykW08Wixo=
@@ -3231,6 +3316,13 @@ debug@^3.0.0, debug@^3.1.0, debug@^3.2.5, debug@^3.2.6:
   integrity sha1-6D0X3hbYp++3cX7b5fsQE17uYps=
   dependencies:
     ms "^2.1.1"
+
+debug@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
 
 decamelize-keys@^1.0.0:
   version "1.1.0"
@@ -3726,6 +3818,34 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+engine.io-client@~3.3.1:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/engine.io-client/-/engine.io-client-3.3.2.tgz#04e068798d75beda14375a264bb3d742d7bc33aa"
+  integrity sha512-y0CPINnhMvPuwtqXfsGuWE8BB66+B6wTtCofQDRecMQPYX3MYUZXFNKDhdrSe3EVjgOu4V3rxdeqN/Tr91IgbQ==
+  dependencies:
+    component-emitter "1.2.1"
+    component-inherit "0.0.3"
+    debug "~3.1.0"
+    engine.io-parser "~2.1.1"
+    has-cors "1.1.0"
+    indexof "0.0.1"
+    parseqs "0.0.5"
+    parseuri "0.0.5"
+    ws "~6.1.0"
+    xmlhttprequest-ssl "~1.5.4"
+    yeast "0.1.2"
+
+engine.io-parser@~2.1.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/engine.io-parser/-/engine.io-parser-2.1.3.tgz#757ab970fbf2dfb32c7b74b033216d5739ef79a6"
+  integrity sha512-6HXPre2O4Houl7c4g7Ic/XzPnHBvaEmN90vtRO9uLmwtRqQmTOw0QMevL1TOfL2Cpu1VzsaTmMotQgMdkzGkVA==
+  dependencies:
+    after "0.8.2"
+    arraybuffer.slice "~0.0.7"
+    base64-arraybuffer "0.1.5"
+    blob "0.0.5"
+    has-binary2 "~1.0.2"
+
 enhanced-resolve@^4.1.0:
   version "4.1.0"
   resolved "https://repo.yumc.pw/repository/npm/enhanced-resolve/-/enhanced-resolve-4.1.0.tgz#41c7e0bfdfe74ac1ffe1e57ad6a5c6c9f3742a7f"
@@ -3830,6 +3950,13 @@ eslint-config-taro@1.3.10:
   dependencies:
     eslint-plugin-taro "1.3.10"
 
+eslint-config-taro@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/eslint-config-taro/-/eslint-config-taro-1.3.11.tgz#3e1cc59ee1510df68640d848263fd97dfbcb7c05"
+  integrity sha1-PhzFnuFRDfaGQNhIJj/ZffvLfAU=
+  dependencies:
+    eslint-plugin-taro "1.3.11"
+
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
   resolved "https://repo.yumc.pw/repository/npm/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -3892,6 +4019,13 @@ eslint-plugin-taro@1.3.10:
   version "1.3.10"
   resolved "https://repo.yumc.pw/repository/npm/eslint-plugin-taro/-/eslint-plugin-taro-1.3.10.tgz#ef60120aaa228f4d509d33c055d7abb856a7584f"
   integrity sha1-72ASCqoij01QnTPAVderuFanWE8=
+  dependencies:
+    has "^1.0.1"
+
+eslint-plugin-taro@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/eslint-plugin-taro/-/eslint-plugin-taro-1.3.11.tgz#f2e72e541c76169b716d952bf9efe48ce07f5265"
+  integrity sha1-8ucuVBx2FptxbZUr+e/kjOB/UmU=
   dependencies:
     has "^1.0.1"
 
@@ -5121,6 +5255,18 @@ has-ansi@^2.0.0:
   dependencies:
     ansi-regex "^2.0.0"
 
+has-binary2@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/has-binary2/-/has-binary2-1.0.3.tgz#7776ac627f3ea77250cfc332dab7ddf5e4f5d11d"
+  integrity sha512-G1LWKhDSvhGeAQ8mPVQlqNcOB2sJdwATtZKl2pDKKHfpf/rYj24lkinxf69blJbnsvtqqNU+L3SL50vzZhXOnw==
+  dependencies:
+    isarray "2.0.1"
+
+has-cors@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/has-cors/-/has-cors-1.1.0.tgz#5e474793f7ea9843d1bb99c23eef49ff126fff39"
+  integrity sha1-XkdHk/fqmEPRu5nCPu9J/xJv/zk=
+
 has-flag@^1.0.0:
   version "1.0.0"
   resolved "https://repo.yumc.pw/repository/npm/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
@@ -5130,6 +5276,11 @@ has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://repo.yumc.pw/repository/npm/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
+
+has-flag@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
+  integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
 has-symbol-support-x@^1.4.1:
   version "1.4.2"
@@ -5551,6 +5702,11 @@ indexes-of@^1.0.1:
   version "1.0.1"
   resolved "https://repo.yumc.pw/repository/npm/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
   integrity sha1-8w9xbI4r00bHtn0985FVZqfAVgc=
+
+indexof@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
+  integrity sha1-gtwzbSMrkGIXnQWrMpOmYFn9Q10=
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -6111,6 +6267,11 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   resolved "https://repo.yumc.pw/repository/npm/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
+isarray@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.1.tgz#a37d94ed9cda2d59865c9f76fe596ee1f338741e"
+  integrity sha1-o32U7ZzaLVmGXJ92/llu4fM4dB4=
+
 isbinaryfile@^3.0.2:
   version "3.0.3"
   resolved "https://repo.yumc.pw/repository/npm/isbinaryfile/-/isbinaryfile-3.0.3.tgz#5d6def3edebf6e8ca8cae9c30183a804b5f8be80"
@@ -6644,10 +6805,10 @@ lodash.unescape@4.0.1:
   resolved "https://repo.yumc.pw/repository/npm/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
   integrity sha1-vyJJiGzlFM2hEvrpIYzcBlIR/Jw=
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://repo.yumc.pw/repository/npm/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
+lodash@4.17.13:
+  version "4.17.13"
+  resolved "https://repo.yumc.pw/repository/npm/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
+  integrity sha1-C9w6atyHPS9ODEusKF35G2T8e5M=
 
 "lodash@4.6.1 || ^4.16.1", lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.5.1, lodash@^4.7.0, lodash@~4.17.10:
   version "4.17.15"
@@ -7294,6 +7455,11 @@ node-forge@0.7.5:
   resolved "https://repo.yumc.pw/repository/npm/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
   integrity sha1-bBUsNFzhHFL0ZcKr2VfoY5zWdN8=
 
+node-gyp-build@~3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-3.7.0.tgz#daa77a4f547b9aed3e2aac779eaf151afd60ec8d"
+  integrity sha512-L/Eg02Epx6Si2NXmedx+Okg+4UHqmaf3TNcxd50SF9NQGcJaON3AtU++kax69XV7YWz4tUspqZSAsVofhFKG2w==
+
 node-gyp@^3.8.0:
   version "3.8.0"
   resolved "https://repo.yumc.pw/repository/npm/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
@@ -7546,6 +7712,11 @@ object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://repo.yumc.pw/repository/npm/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+
+object-component@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/object-component/-/object-component-0.0.3.tgz#f0c69aa50efc95b866c186f400a33769cb2f1291"
+  integrity sha1-8MaapQ78lbhmwYb0AKM3acsvEpE=
 
 object-copy@^0.1.0:
   version "0.1.0"
@@ -7973,6 +8144,20 @@ parse-passwd@^1.0.0:
   resolved "https://repo.yumc.pw/repository/npm/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
   integrity sha1-bVuTSkVpk7I9N/QKOC1vFmao5cY=
 
+parseqs@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/parseqs/-/parseqs-0.0.5.tgz#d5208a3738e46766e291ba2ea173684921a8b89d"
+  integrity sha1-1SCKNzjkZ2bikbouoXNoSSGouJ0=
+  dependencies:
+    better-assert "~1.0.0"
+
+parseuri@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/parseuri/-/parseuri-0.0.5.tgz#80204a50d4dbb779bfdc6ebe2778d90e4bce320a"
+  integrity sha1-gCBKUNTbt3m/3G6+J3jZDkvOMgo=
+  dependencies:
+    better-assert "~1.0.0"
+
 parseurl@~1.3.2, parseurl@~1.3.3:
   version "1.3.3"
   resolved "https://repo.yumc.pw/repository/npm/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
@@ -8236,10 +8421,10 @@ postcss-modules-values@^1.3.0:
     icss-replace-symbols "^1.1.0"
     postcss "^6.0.1"
 
-postcss-plugin-constparse@1.3.10:
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/postcss-plugin-constparse/-/postcss-plugin-constparse-1.3.10.tgz#4a7efdae61afdc17923afa93f21baf9ee488e082"
-  integrity sha1-Sn79rmGv3BeSOvqT8huvnuSI4II=
+postcss-plugin-constparse@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/postcss-plugin-constparse/-/postcss-plugin-constparse-1.3.11.tgz#fee12c48d3170e0f1e9237b890927fc64aa88127"
+  integrity sha1-/uEsSNMXDg8ekje4kJJ/xkqogSc=
   dependencies:
     postcss "^6.0.22"
 
@@ -8251,10 +8436,10 @@ postcss-pxtorem@^4.0.1:
     object-assign "^4.1.0"
     postcss "^5.2.10"
 
-postcss-pxtransform@1.3.10:
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/postcss-pxtransform/-/postcss-pxtransform-1.3.10.tgz#e8d31de1e9c5121bcbea002f47aab33b4d482280"
-  integrity sha1-6NMd4enFEhvL6gAvR6qzO01IIoA=
+postcss-pxtransform@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/postcss-pxtransform/-/postcss-pxtransform-1.3.11.tgz#7c45325ca936de241dc35e8cb222d06e2a58953d"
+  integrity sha1-fEUyXKk23iQdw16MsiLQbipYlT0=
   dependencies:
     postcss "^6.0.16"
     postcss-pxtorem "^4.0.1"
@@ -9029,6 +9214,11 @@ require-directory@^2.1.1:
   resolved "https://repo.yumc.pw/repository/npm/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
 
+require-from-string@^2.0.1:
+  version "2.0.2"
+  resolved "https://repo.yumc.pw/repository/npm/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
+  integrity sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=
+
 require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://repo.yumc.pw/repository/npm/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
@@ -9307,7 +9497,7 @@ sax@0.5.x:
   resolved "https://repo.yumc.pw/repository/npm/sax/-/sax-0.5.8.tgz#d472db228eb331c2506b0e8c15524adb939d12c1"
   integrity sha1-1HLbIo6zMcJQaw6MFVJK25OdEsE=
 
-sax@^1.2.4:
+sax@>=0.6.0, sax@^1.2.4:
   version "1.2.4"
   resolved "https://repo.yumc.pw/repository/npm/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
@@ -9570,6 +9760,35 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+socket.io-client@^2.1.1, socket.io-client@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.2.0.tgz#84e73ee3c43d5020ccc1a258faeeb9aec2723af7"
+  integrity sha512-56ZrkTDbdTLmBIyfFYesgOxsjcLnwAKoN4CiPyTVkMQj3zTUh0QAx3GbvIvLpFEOvQWu92yyWICxB0u7wkVbYA==
+  dependencies:
+    backo2 "1.0.2"
+    base64-arraybuffer "0.1.5"
+    component-bind "1.0.0"
+    component-emitter "1.2.1"
+    debug "~3.1.0"
+    engine.io-client "~3.3.1"
+    has-binary2 "~1.0.2"
+    has-cors "1.1.0"
+    indexof "0.0.1"
+    object-component "0.0.3"
+    parseqs "0.0.5"
+    parseuri "0.0.5"
+    socket.io-parser "~3.3.0"
+    to-array "0.1.4"
+
+socket.io-parser@~3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-3.3.0.tgz#2b52a96a509fdf31440ba40fed6094c7d4f1262f"
+  integrity sha512-hczmV6bDgdaEbVqhAeVMM/jfUfzuEZHsQg6eOmLgJht6G3mPKMxYm75w2+qhAQZ+4X+1+ATZ+QFKeOZD5riHng==
+  dependencies:
+    component-emitter "1.2.1"
+    debug "~3.1.0"
+    isarray "2.0.1"
 
 sockjs-client@1.3.0:
   version "1.3.0"
@@ -9984,10 +10203,22 @@ stylelint-config-taro-rn@1.3.10:
   resolved "https://repo.yumc.pw/repository/npm/stylelint-config-taro-rn/-/stylelint-config-taro-rn-1.3.10.tgz#97ef9b3b35ae014cff779b94968560404cc46474"
   integrity sha1-l++bOzWuAUz/d5uUloVgQEzEZHQ=
 
+stylelint-config-taro-rn@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/stylelint-config-taro-rn/-/stylelint-config-taro-rn-1.3.11.tgz#2a9f5911e54b9c0fce0b73f20660177d5b7e94be"
+  integrity sha1-Kp9ZEeVLnA/OC3PyBmAXfVt+lL4=
+
 stylelint-taro-rn@1.3.10:
   version "1.3.10"
   resolved "https://repo.yumc.pw/repository/npm/stylelint-taro-rn/-/stylelint-taro-rn-1.3.10.tgz#21aa48045bdd31628aeb7194cb515f7db5389614"
   integrity sha1-IapIBFvdMWKK63GUy1FffbU4lhQ=
+  dependencies:
+    react-native-known-styling-properties "^1.0.4"
+
+stylelint-taro-rn@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/stylelint-taro-rn/-/stylelint-taro-rn-1.3.11.tgz#78484f976fe7b43b4e92a331155cd99fb29adb9b"
+  integrity sha1-eEhPl2/ntDtOkqMxFVzZn7Ka25s=
   dependencies:
     react-native-known-styling-properties "^1.0.4"
 
@@ -10094,6 +10325,13 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
+supports-color@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.0.0.tgz#f2392c50ab35bb3cae7beebf24d254a19f880c06"
+  integrity sha512-WRt32iTpYEZWYOpcetGm0NPeSvaebccx7hhS/5M6sAiqnhedtFCHFxkjzZlJvFNCPowiKSFGiZk5USQDFy83vQ==
+  dependencies:
+    has-flag "^4.0.0"
+
 svg-tags@^1.0.0:
   version "1.0.0"
   resolved "https://repo.yumc.pw/repository/npm/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
@@ -10191,10 +10429,10 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
-taro-css-to-react-native@1.3.10:
-  version "1.3.10"
-  resolved "https://repo.yumc.pw/repository/npm/taro-css-to-react-native/-/taro-css-to-react-native-1.3.10.tgz#c66fcea4f3760326eec76b3789d8811641cc2ee6"
-  integrity sha1-xm/OpPN2Aybux2s3idiBFkHMLuY=
+taro-css-to-react-native@1.3.11:
+  version "1.3.11"
+  resolved "https://repo.yumc.pw/repository/npm/taro-css-to-react-native/-/taro-css-to-react-native-1.3.11.tgz#7cc76469ff0ac6e8806536637797302144d73a93"
+  integrity sha1-fMdkaf8KxuiAZTZjd5cwIUTXOpM=
   dependencies:
     camelize "^1.0.0"
     css "^2.2.4"
@@ -10308,6 +10546,11 @@ to-absolute-glob@^2.0.0:
   dependencies:
     is-absolute "^1.0.0"
     is-negated-glob "^1.0.0"
+
+to-array@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/to-array/-/to-array-0.1.4.tgz#17e6c11f73dd4f3d74cda7a4ff3238e9ad9bf890"
+  integrity sha1-F+bBH3PdTz10zaek/zI46a2b+JA=
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
@@ -10482,7 +10725,7 @@ typedarray@^0.0.6:
   resolved "https://repo.yumc.pw/repository/npm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.0.1, typescript@^3.2.2:
+typescript@^3.0.1, typescript@^3.2.2, typescript@^3.5.3:
   version "3.5.3"
   resolved "https://repo.yumc.pw/repository/npm/typescript/-/typescript-3.5.3.tgz#c830f657f93f1ea846819e929092f5fe5983e977"
   integrity sha1-yDD2V/k/HqhGgZ6SkJL1/lmD6Xc=
@@ -10529,6 +10772,11 @@ uglifyjs-webpack-plugin@1.2.4:
     uglify-es "^3.3.4"
     webpack-sources "^1.1.0"
     worker-farm "^1.5.2"
+
+ultron@~1.1.0:
+  version "1.1.1"
+  resolved "https://repo.yumc.pw/repository/npm/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
+  integrity sha1-n+FTahCmZKZSZqHjzPhf02MCvJw=
 
 unbzip2-stream@^1.0.9:
   version "1.3.3"
@@ -10755,6 +11003,13 @@ use@^3.1.0:
   resolved "https://repo.yumc.pw/repository/npm/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
 
+utf-8-validate@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/utf-8-validate/-/utf-8-validate-5.0.2.tgz#63cfbccd85dc1f2b66cf7a1d0eebc08ed056bfb3"
+  integrity sha512-SwV++i2gTD5qh2XqaPzBnNX88N6HdyhQrNNRykvcS0QKvItV9u3vPEJr+X5Hhfb1JC0r0e1alL0iB09rY8+nmw==
+  dependencies:
+    node-gyp-build "~3.7.0"
+
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://repo.yumc.pw/repository/npm/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -10966,6 +11221,31 @@ wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
+
+weapp.engine.io-client@^3.2.3:
+  version "3.2.3"
+  resolved "https://repo.yumc.pw/repository/npm/weapp.engine.io-client/-/weapp.engine.io-client-3.2.3.tgz#10af832345054fca31db6363cd999e2b9b3de293"
+  integrity sha1-EK+DI0UFT8ox22NjzZmeK5s94pM=
+  dependencies:
+    component-emitter "1.2.1"
+    component-inherit "0.0.3"
+    debug "~3.1.0"
+    engine.io-parser "~2.1.1"
+    has-cors "1.1.0"
+    indexof "0.0.1"
+    parseqs "0.0.5"
+    parseuri "0.0.5"
+    ws "~3.3.1"
+    xmlhttprequest-ssl "~1.5.4"
+    yeast "0.1.2"
+
+weapp.socket.io@^2.0.1:
+  version "2.0.1"
+  resolved "https://repo.yumc.pw/repository/npm/weapp.socket.io/-/weapp.socket.io-2.0.1.tgz#586d59bd95d19cec98336250b30e14597501c1d7"
+  integrity sha1-WG1ZvZXRnOyYM2JQsw4UWXUBwdc=
+  dependencies:
+    socket.io-client "^2.1.1"
+    weapp.engine.io-client "^3.2.3"
 
 webpack-chain@4.9.0:
   version "4.9.0"
@@ -11214,6 +11494,22 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
+ws@~3.3.1:
+  version "3.3.3"
+  resolved "https://repo.yumc.pw/repository/npm/ws/-/ws-3.3.3.tgz#f1cf84fe2d5e901ebce94efaece785f187a228f2"
+  integrity sha1-8c+E/i1ekB686U767OeF8YeiKPI=
+  dependencies:
+    async-limiter "~1.0.0"
+    safe-buffer "~5.1.0"
+    ultron "~1.1.0"
+
+ws@~6.1.0:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.1.4.tgz#5b5c8800afab925e94ccb29d153c8d02c1776ef9"
+  integrity sha512-eqZfL+NE/YQc1/ZynhojeV8q+H050oR8AZ2uIev7RU10svA9ZnJUddHcOUZTJLinZ9yEfdA2kSATS2qZK5fhJA==
+  dependencies:
+    async-limiter "~1.0.0"
+
 x-is-string@^0.1.0:
   version "0.1.0"
   resolved "https://repo.yumc.pw/repository/npm/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
@@ -11223,6 +11519,24 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://repo.yumc.pw/repository/npm/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
   integrity sha1-SWsswQnsqNus/i3HK2A8F8WHCtQ=
+
+xml2js@^0.4.19:
+  version "0.4.19"
+  resolved "https://repo.yumc.pw/repository/npm/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+  integrity sha1-aGwg8hMgnpSr8NG88e+qKRx4J6c=
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~9.0.1"
+
+xmlbuilder@~9.0.1:
+  version "9.0.7"
+  resolved "https://repo.yumc.pw/repository/npm/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
+  integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
+
+xmlhttprequest-ssl@~1.5.4:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
+  integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
 
 xregexp@4.0.0:
   version "4.0.0"
@@ -11369,3 +11683,8 @@ yauzl@2.10.0, yauzl@^2.4.2:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
+
+yeast@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
+  integrity sha1-AI4G2AlDIMNy28L47XagymyKxBk=
