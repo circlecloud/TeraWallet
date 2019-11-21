@@ -43,17 +43,20 @@ class App extends Component {
       color: "#e6e6e6",
       selectedColor: "#2c2c2c",
       backgroundColor: "#f8f8f8",
-      list: [{
-        pagePath: 'pages/index/index',
-        text: "首页",
-        iconPath: "assets/images/home.png",
-        selectedIconPath: "assets/images/home_select.png"
-      }, {
-        pagePath: 'pages/my/index',
-        text: '我的',
-        iconPath: "assets/images/my.png",
-        selectedIconPath: "assets/images/my_select.png"
-      }]
+      list: [
+        {
+          pagePath: 'pages/index/index',
+          text: "首页",
+          iconPath: "assets/images/home.png",
+          selectedIconPath: "assets/images/home_select.png"
+        },
+        {
+          pagePath: 'pages/my/index',
+          text: '我的',
+          iconPath: "assets/images/my.png",
+          selectedIconPath: "assets/images/my_select.png"
+        }
+      ]
     }
   }
 

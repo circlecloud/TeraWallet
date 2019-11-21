@@ -1,13 +1,23 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "TeraWallet",
-  "description": "泰瑞管理工具",
-  "appid": "1109699640",
+  "appid": "1109815781",
   "setting": {
-    "urlCheck": true,
+    "newFeature": true,
+    "urlCheck": false,
     "es6": false,
     "postcss": false,
-    "minified": false
+    "minified": false,
+    "remoteDebugLogEnable": false,
+    "uploadWithSourceMap": true,
+    "useAlphaLib": true,
+    "nodeModules": true,
+    "autoAudits": true,
+    "uglifyFileName": true
   },
-  "compileType": "miniprogram"
+  "scripts": {
+    "beforeCompile": "",
+    "beforePreview": "",
+    "beforeUpload": ""
+  },
+  "qqappid": "1109815781",
+  "condition": {}
 }

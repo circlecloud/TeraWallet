@@ -9,14 +9,15 @@
     "css": "sass"
   },
   "scripts": {
-    "build:wx": "taro build --type weapp",
+    "build:wx": "taro build --type weapp && cp -rf project.weapp.json ./dist/qq/project.config.json",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
     "build:tt": "taro build --type tt",
     "build:h5": "taro build --type h5",
     "build:rn": "taro build --type rn",
-    "build:qq": "taro build --type qq",
+    "build:qq": "taro build --type qq && cp -rf project.qq.json ./dist/qq/project.config.json",
     "build:quickapp": "taro build --type quickapp",
+    "postbuild": "echo 'Build Successfil...'",
     "dev:wx": "npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
@@ -54,7 +55,7 @@
     "weapp.socket.io": "^2.0.1"
   },
   "devDependencies": {
-    "@tarojs/cli": "^1.3.11",
+    "@tarojs/cli": "^1.3.18",
     "@tarojs/plugin-babel": "1.3.11",
     "@tarojs/plugin-csso": "1.3.11",
     "@tarojs/plugin-sass": "^1.3.11",

@@ -19,20 +19,29 @@ class My extends Component<MyIndexProps, MyState> {
     enablePullDownRefresh: true
   }
   state = {
-    nickName: 'MiaoWoo',
+    nickName: 'TeraWallet',
     avatarUrl: defaultImage,
-    publicKey: '191864'
+    publicKey: ''
   }
   defaultProps = {
     accounts: []
   }
 
   onPullDownRefresh() {
-    this.props[Actions.getAccounts](this.state.publicKey)
+    if (this.state.publicKey) {
+      this.props[Actions.getAccounts](this.state.publicKey)
+    } else {
+      Taro.stopPullDownRefresh();
+      Taro.showToast({
+        title: '尚未绑定账号',
+        icon: 'none',
+        duration: 1500
+      })
+    }
   }
 
   componentDidMount() {
-    Taro.startPullDownRefresh();
+    // Taro.startPullDownRefresh();
   }
 
   render() {

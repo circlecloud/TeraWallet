@@ -1,4 +1,5 @@
 import { AtList, AtListItem } from "taro-ui";
+import Taro from "@tarojs/taro";
 
 const AccountHeader = () => (
   <AtList hasBorder={false}>
@@ -9,7 +10,8 @@ const AccountHeader = () => (
         size: 20,
         color: 'red',
         value: 'lock',
-      }} />
+      }}
+    />
     <AtListItem
       hasBorder={false}
       title='创建账户'
@@ -17,7 +19,8 @@ const AccountHeader = () => (
         size: 20,
         color: 'green',
         value: 'credit-card',
-      }} />
+      }}
+    />
   </AtList>
 )
 

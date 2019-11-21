@@ -10,12 +10,15 @@ import './index.scss';
 import { Actions } from './model';
 import BaseInfo from './components/base-info'
 import { IndexProps, IndexState } from './type';
+import sharePage from '../../components/sharePage';
 
 // import WsClient from '../../rpc/socket'
 
 const PAGE_NAME = 'index'
 
 @connect(mapModelProps(PAGE_NAME), mapModelActions(PAGE_NAME, Actions))
+//@ts-ignore
+@sharePage()
 class Index extends Component<IndexProps, IndexState> {
   config: Config = {
     navigationBarTitleText: '首页',
